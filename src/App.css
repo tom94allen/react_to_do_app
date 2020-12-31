@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Lucida Sans', sans-serif;
+  line-height: 1.4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  width: 80%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+  height: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.flex-container{
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px auto;
+  background-color: lightgray;
+  padding: 15px;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 1px 2px 3px lightgray;
+}
+
+.App:nth-child(2){
+  margin-top: 0px;
+}
+
+.small-flex-container{
+  display: flex;
+  width: 75%;
+  height: auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-item{
+  width: 750%;
+}
+
+.checkbox{
+  margin-right: 10px;
+}
+
+#removeBtn{
+  background-color: transparent;
+  border: none;
+}
+
+#removeBtn img{
+  width: 25px;
+}
+
+#removeBtn:hover{
+  cursor: pointer;
+}
+
+.addBar{
+  display: flex;
+  width: 50%;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+
+.addBar #addInput{
+  width: 85%;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+  box-shadow: 1px 2px 3px lightgray;
+}
+
+#addInput::placeholder{
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+#addBtn{
+  background-color: transparent;
+  border: none;
+  display: flex;
+  width: 15%;
+  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 15px;
+  margin-right: 5px;
+}
+
+#addBtn:hover{
+  cursor: pointer;
+}
+
+#addBtn #addImg{
+  width: 25px;
+}
+
+.headerContainer{
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: lightgray;
   color: white;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
